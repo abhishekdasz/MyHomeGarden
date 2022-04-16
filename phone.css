@@ -1,0 +1,39 @@
+/* body{
+    background-color: aqua;
+} */
+
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    padding: 3px 3px;
+    font-size: 15px;
+    
+}
+/* Home Section */
+#home{
+    padding: 3px 20px;
+}
+
+#home p{
+    font-size: 15px;
+}
+/* Services Section */
+#services{
+    flex-direction: column;
+}
+/* Clients Section */
+.clients{
+    flex-wrap: wrap;
+}
+.clients img{
+    /* flex-wrap: wrap; */
+    /* overflow: hidden; */
+    /* flex-direction: column; */
+    width: 66px;
+    height: auto;
+}
+/* Contact Us Section */
+
+/* Footer */

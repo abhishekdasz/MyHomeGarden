@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Garden</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1060px)" href="phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    <!-- <header> -->
+        <nav id="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="./images/logo.png" alt="My Home Garden Logo"> </a>
+            </div>
+            <ul class="navigation">
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="#services-container">Services</a></li>
+                <li class="item"><a href="#clients-container">About Us</a></li>
+                <li class="item"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav> 
+    <!-- </header> -->
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1 class="center">Welcome to MyHomeGarden</h1>
+        <br> <br>
+        <p>Online store with a curated range of planters, hangers, seeds, soil, fertiliser and gardening must-haves with A unique and refreshing mix of hands-on training and interactive science stories for organisations.</p>
+        <button class="btn"><a href="#services-container">Get Service</a> </button>
+    </section>
+
+    <!-- Service Container -->
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="./images/img3.jpg" alt="img1">
+                <h2 class="h-secondary center">Shop Plant Decor</h2>
+                <p class="center">Collection of decor essentials for your indoor and outdoor plants.
+                    Your one-stop destination for all your plant care needs. Nutrition and maintenance are necessary for plants to thrive in our living spaces. Our products range from fertilizers, pest control to soil mix & composting solutions for growing healthy plants and an enriched home gardening experience. 
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="./images/img2.jpg" alt="img1">
+                <h2 class="h-secondary center">Shop Plant Essentials</h2>
+                <p class="center">Gardening must-haves to grow healthy and happy plants.
+                    Your one-stop destination for all your plant care needs. Nutrition and maintenance are necessary for plants to thrive in our living spaces. Our products range from fertilizers, pest control to soil mix & composting solutions for growing healthy plants and an enriched home gardening experience. 
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="./images/img1.jpg" alt="img1">
+                <h2 class="h-secondary center">Workshops</h2>
+                <p class="center">Our workshops are a unique and refreshing mix of hands-on training and interactive science stories, suitable for corporates, institutes, private groups and schools. For more details and specifics, please write to abhishekdaszy@gmail.com </p> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients-container">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div class="clients">
+            <div class="client-items">
+                <img src="./images/logo1.png" alt="">
+            </div>
+            <div class="client-items">
+                <img src="./images/logo2.png" alt="">
+            </div>
+            <div class="client-items">
+                <img src="./images/logo3.png" alt="">
+            </div>
+            <div class="client-items">
+                <img src="./images/logo4.png" alt="">
+            </div>
+            <div class="client-items">
+                <img src="./images/logo5.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email</label>
+                    <input type="text" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone Number</label>
+                    <input type="text" placeholder="Enter Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message</label>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; All Rights Reserved wwww.MyHomeGarden.com
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+</body>
+</html>
